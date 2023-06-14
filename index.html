@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo">
+          <img src="./assets/title.png" alt="" />
+        </div>
+        <div class="score">
+          <p>SCORE</p>
+          <h1>0</h1>
+        </div>
+      </div>
+      <div class="hands">
+        <div class="paper">
+          <img src="/assets/Paper.png" onclick="pickUserHand('paper')" alt="" />
+        </div>
+        <div class="scissors">
+          <img
+            src="/assets/Scissors.png"
+            onclick="pickUserHand('scissors')"
+            alt=""
+          />
+        </div>
+        <div class="rock">
+          <img src="/assets/Rock.png" onclick="pickUserHand('rock')" alt="" />
+        </div>
+      </div>
+      <div class="result">
+        <div class="userhand">
+          <h1>YOU PICKED</h1>
+          <img id="userpickimg" src="/assets/rock.png" alt="" />
+        </div>
+        <div class="refree">
+          <h1 id="decision">YOU WIN</h1>
+          <div class="newgame" onclick="restartGame()" >PLAY AGAIN</div>
+        </div>
+        <div class="computerhand">
+          <h1>THE HOUSE PICKED</h1>
+          <img id="computerpickimg" src="/assets/rock.png" alt="" />
+        </div>
+      </div>
+      <!-- <div class="rules">
+        <a href="/images/image-rules.svg"> <button>Rules</button></a>
+      </div> -->
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
