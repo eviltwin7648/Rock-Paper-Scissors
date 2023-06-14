@@ -8,9 +8,9 @@ function pickUserHand(hand) {
   if (hand == "rock") {
     document.getElementById("userpickimg").src = "./assets/rock.png";
   } else if (hand == "paper") {
-    document.getElementById("userpickimg").src = "/assets/Paper.png";
+    document.getElementById("userpickimg").src = "./assets/Paper.png";
   } else {
-    document.getElementById("userpickimg").src = "/assets/Scissors.png";
+    document.getElementById("userpickimg").src = "./assets/Scissors.png";
   }
 
   let cpHand = pickComputerhand();
@@ -20,7 +20,7 @@ function pickComputerhand() {
   let hands = ["rock", "paper", "scissors"];
   var cpHand = hands[Math.floor(Math.random() * 3)];
   console.log(cpHand);
-  document.getElementById("computerpickimg").src = "/assets/" + cpHand + ".png";
+  document.getElementById("computerpickimg").src = "./assets/" + cpHand + ".png";
   return cpHand;
 }
 let score = 0;

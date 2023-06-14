@@ -59,7 +59,7 @@ body {
   grid-template-columns: 1fr 1fr;
   width: 476px;
   height: 430px;
-  background-image: url("/assets/triangle.png");
+  background-image: url("./assets/triangle.png");
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 10px;
