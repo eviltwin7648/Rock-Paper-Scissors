@@ -6,7 +6,7 @@ function pickUserHand(hand) {
   results.style.display = "flex";
 
   if (hand == "rock") {
-    document.getElementById("userpickimg").src = "./assets/rock.png";
+    document.getElementById("userpickimg").src = "./assets/Rock.png";
   } else if (hand == "paper") {
     document.getElementById("userpickimg").src = "./assets/Paper.png";
   } else {
@@ -17,7 +17,7 @@ function pickUserHand(hand) {
   refree(hand, cpHand);
 }
 function pickComputerhand() {
-  let hands = ["rock", "paper", "scissors"];
+  let hands = ["Rock", "Paper", "Scissors"];
   var cpHand = hands[Math.floor(Math.random() * 3)];
   console.log(cpHand);
   document.getElementById("computerpickimg").src = "./assets/" + cpHand + ".png";
